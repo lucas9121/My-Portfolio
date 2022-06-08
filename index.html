@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/18a2cdda19.js" crossorigin="anonymous"></script>
     <title>Porfolio</title>
 </head>
 <body>
     <header>
         <nav aria-label="Main Navigation" role="navigation">
-            <p>Picture here</p>
+            <div>Picture here</div>
             <h1>Lucas Carlos</h1>
-            <ul>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#About">About</a></li>
+            <ul class="nav-footer-ul">
+                <li><a class="Link" href="#Projects">Projects</a></li>
+                <li><a class="Link" href="#About">About</a></li>
             </ul>
         </nav>
     </header>
@@ -27,12 +28,20 @@
                 <h1>Gamehub</h1>
                 <p>Description</p>
                 <h4>Tech Used</h4>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <a href="https://github.com/lucas9121/Gamehub" target="_blank">Github</a>
-                <a href="https://gamehub-react.herokuapp.com/games" target="_blank">Game</a>
+                <div class="tech">
+                    <i class="fa-solid fa-code fa-2x html"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x css3"></i>
+                    <i class="fa-brands fa-js-square fa-2x js-sq"></i>
+                    <i class="fa-brands fa-mdb fa-2x mdb"></i>
+                    <i class="fa-brands fa-react fa-2x react"></i>
+                    <i class="fa-brands fa-node fa-2x node"></i>
+                </div>
+                <ul>
+                    <li><a class="Link" href="https://github.com/lucas9121/Gamehub" target="_blank"><i class="fa-brands fa-github fa-2x icon"></i></a></li>
+                    <li><a class="Link" href="https://gamehub-react.herokuapp.com/games" target="_blank"><i class="fa-solid fa-gamepad fa-2x icon" id="unit3"></i></a></li>
+                </ul>
+                
+                
             </div>
         </article>
         <article class="my-projects">
@@ -41,12 +50,21 @@
                 <h1>Romaing Spoon</h1>
                 <p>Description</p>
                 <h4>Tech Used</h4>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <a href="https://github.com/lucas9121/roaming-food-trucks" target="_blank">Github</a>
-                <a href="https://roaming-spoon.herokuapp.com/" target="_blank">Game</a>
+                <div class="tech">
+                    <i class="fa-solid fa-code fa-2x html"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x css3"></i>
+                    <i class="fa-brands fa-js-square fa-2x js-sq"></i>
+                    <i class="fa-brands fa-mdb fa-2x mdb"></i>
+                    <i class="fa-brands fa-react fa-2x react"></i>
+                    <i class="fa-brands fa-node fa-2x node"></i>
+                    <i class="fa-brands fa-bootstrap fa-2x bootstrap"></i>
+                </div>
+                <ul>
+                    <li><a class="Link" href="https://github.com/lucas9121/roaming-food-trucks" target="_blank"><i class="fa-brands fa-github fa-2x icon"></i></a></li>
+                    <li><a class="Link" href="https://roaming-spoon.herokuapp.com/" target="_blank"><i class="fa-solid fa-truck icon fa-2x" id="unit4"></i></a></li>
+                </ul>
+                
+                
             </div>
         </article>
         <article class="my-projects">
@@ -55,21 +73,28 @@
                 <h1>Wars of Vogrora</h1>
                 <p>Description</p>
                 <h4>Tech Used</h4>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <a href="https://github.com/lucas9121/Wars-of-Vogrora" target="_blank">Github</a>
-                <a href="https://lucas9121.github.io/Wars-of-Vogrora/" target="_blank">Game</a>
+                <div class="tech">
+                    <i class="fa-solid fa-code fa-2x html"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x css3"></i>
+                    <i class="fa-brands fa-js-square fa-2x js-sq"></i>
+                </div>
+                <ul>
+                    <li><a class="Link" href="https://github.com/lucas9121/Wars-of-Vogrora" target="_blank"><i class="fa-brands fa-github fa-2x icon"></i></a></li>
+                    <li><a class="Link" href="https://lucas9121.github.io/Wars-of-Vogrora/" target="_blank"><i class="fa-solid fa-dungeon fa-2x icon" id="unit1"></i></a></li>
+                </ul>
+                
+                
             </div>
         </article>
-        <h1>Hello World!</h1>
     </main>
     <footer>
-        <p>Contact me: <a href="mailto:lucas2carlos@gmail.com?" target="_blank" >lucas2carlos@gmail.com</a></p>
-        <ul>
-            <li><a href="https://github.com/lucas9121" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/lucas-carlos-915b23127" target="_blank">LinkedIn</a></li>
+        <p>Contact me: </p>
+        <ul class="nav-footer-ul">
+            <li><a class="Link" href="mailto:lucas2carlos@gmail.com?" target="_blank" ><i class="fa-solid fa-envelope fa-2x icon"></i></a></li>
+            <li><a class="Link" href="https://github.com/lucas9121" target="_blank"><i class="fa-brands fa-github fa-2x icon"></i></a></li>
+            <li><a class="Link" href="https://www.linkedin.com/in/lucas-carlos-915b23127" target="_blank"><i class="fa-brands fa-linkedin fa-2x icon" id="linkedin"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter fa-2x icon" id="twiter"></i></a></li>
+            <li><a href=""><i class="fa-regular fa-file-lines fa-2x icon"></i></a></li>
         </ul>
     </footer>
 </body>
