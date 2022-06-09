@@ -184,9 +184,19 @@ article > div {
     text-align: justify;
 }
 
+#GH{
+    font-size: 3rem;
+    color: #007bff;
+}
+
 #RFT{
     font-size: 3rem;
     color: #f2782f;
+}
+
+#WOV{
+    font-size: 3rem;
+    color: red;
 }
 
 .tech{
