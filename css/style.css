@@ -4,6 +4,7 @@ body{
    flex-direction: column;
    justify-content: space-between;
    margin: 0 auto;
+   color: purple;
 }
 header{
     background: rgb(0,0,0, 0.7);
@@ -46,12 +47,14 @@ nav > h1 {
 
 .Link:visited{
     color: cornflowerblue;
+    scroll-behavior: smooth;
 }
 
 main{
     width: 90vw;
     margin: 0 auto;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 
 article{
@@ -63,11 +66,13 @@ article{
 article > div {
     flex: 1;
     border: solid black;
+    border-radius: 10px 0 0 10px;
 }
 
-article > div:nth-child(2){
+.game-description{
     flex: 2;
     border-left: none;
+    border-radius: 0 10px 10px 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -75,11 +80,54 @@ article > div:nth-child(2){
     overflow: auto;
 }
 
+.game-description > h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.game-description > p{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding: 0 1%;
+    text-indent: 2%;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+#RFT{
+    font-size: 3rem;
+    color: #f2782f;
+}
+
 .tech{
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+.tech > div {
+    position: relative;
+}
+
+.tech > div > p {
+    display: none;
+    margin: 0;
+    transition: .2s;
+    height: 150%;
+    width: 110%;
+    border-radius: 44%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech > div:hover > p {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    transition: .2s;
 }
 
 .html{
