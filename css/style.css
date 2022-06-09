@@ -206,7 +206,6 @@ article > div {
     transition: .2s;
     height: 150%;
     width: 110%;
-    border-radius: 44%;
     align-items: center;
     justify-content: center;
 }
