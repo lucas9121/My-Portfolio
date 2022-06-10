@@ -6,6 +6,9 @@ body{
    margin: 0 auto;
    /* color: purple; */
    background-color: floralwhite;
+   background: linear-gradient(45deg, black, rgb(0, 28, 58, 0.97), rgb(0, 62, 129, 0.97), rgb(0, 123, 255, 0.97), rgb(0, 62, 129, 0.97), rgb(0, 28, 58, 0.97), black);
+   background: linear-gradient(45deg, black,  rgb(0, 0, 0, 0.6),  rgb(0, 0, 0, 0.6),  rgb(0, 0, 0, 0.6),  rgb(0, 0, 0, 0.6),  rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(255, 255, 255, 0.7));
+   background: linear-gradient(45deg, black, rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(0, 5, 10, .6), rgb(0, 17, 36, .6), rgb(0, 32, 66, .6), rgb(0, 40, 84, .6), rgb(0, 48, 100, .7), rgb(0, 62, 129, .9));
 }
 
 /* /// Every Ul element //// */
@@ -24,6 +27,7 @@ ul{
 /* ////////////////////////////////// Navigation //////////////////////////////////////// */
 header{
     background: rgb(0,0,0, 0.7);
+    background: rgb(0, 62, 129, 0.8);
     padding: .2% 1.2%;
     height: 5%;
     height: 70px;
@@ -152,6 +156,22 @@ article{
     padding: 2% 0;
 }
 
+#GH-picture{
+    background: url(../images/GH/GH1.png);
+    background-repeat: round;
+}
+
+#RS-picture{
+    background: url(../images/RFD/RFD1.png);
+    background-repeat: round;
+}
+
+#WV-picture{
+    background: url(../images/WOV/WOV1.png);
+    background-size: contain;
+    background-repeat: round;
+}
+
 article > div {
     flex: 1;
     border: solid black;
@@ -178,6 +198,7 @@ article > div {
 .game-description > p{
     font-size: 1.5rem;
     margin-bottom: 0;
+    margin-top: 15px;
     padding: 0 1%;
     text-indent: 2%;
     line-height: 1.2em;
@@ -203,7 +224,7 @@ article > div {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 20px 0;
+    padding: 20px 0 5px 0;
 }
 
 .tech > div {
