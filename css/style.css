@@ -1,3 +1,8 @@
+html{
+    background-color: #080808;
+    background: rgb(255 152 0 / 57%);
+}
+
 body{
    height: 100vh;
    display: flex;
@@ -9,7 +14,7 @@ body{
    color: rgb(0 0 0 / 78%);
    background: linear-gradient(45deg, black, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(0, 48, 100, .7), rgb(0, 62, 129, .9));
    background: linear-gradient(60deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 80%), rgb(1 18 42 / 70%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 70%), rgb(0 62 129));
-   background: linear-gradient(60deg, rgb(255 250 240 / 80%), rgb(255 250 240 / 60%), rgb(233 224 203 / 70%), rgb(233 224 203 / 60%), rgb(233 224 203 / 60%), rgb(233 224 203 / 60%), rgb(233 224 203 / 60%), rgb(233 224 203 / 70%), rgb(234 178 39));
+   background: linear-gradient(60deg, rgb(255 250 240 / 60%), rgb(255 250 240 / 80%), rgb(223 203 157 / 70%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 70%), rgb(234 178 39));
 }
 
 /* /// Every Ul element //// */
@@ -45,6 +50,41 @@ nav{
     height: 100%;
 }
 
+#logo{
+    width: 0px;
+    height: 0px;
+    border: 40px solid transparent;
+    border-bottom: 20px solid #080808;
+    position: relative;
+    top: -50px;
+}
+#logo:after {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 20px;
+    width: 0px;
+    height: 0px;
+    border: 40px solid transparent;
+    border-top: 50px solid #090909;
+}
+
+#logo > p {
+    position: absolute;
+    z-index: 2;
+    margin: 18px 0 0 -13px;
+    font-size: larger;
+    color: white;
+    padding: 1px;
+    border: solid;
+}
+
+#logo > p > a {
+    color: white;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
 nav > h1 {
     margin: 0;
 }
@@ -60,7 +100,6 @@ nav > h1 {
 }
 
 .Link:visited{
-    color: cornflowerblue;
     scroll-behavior: smooth;
 }
 
@@ -153,6 +192,10 @@ main{
     scrollbar-width: none;
 }
 
+main::-webkit-scrollbar {
+    display: none;
+}
+
 #main-div{
     width: 80vw;
     margin: 0 auto;
@@ -215,6 +258,7 @@ article{
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 #About > div:nth-child(2) {
@@ -229,6 +273,19 @@ article{
 
 #About > div > p {
     font-size: 1.5rem;
+}
+
+#skills {
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+#skills > li {
+    border-right: solid;
+    padding-right: 10px;
+    font-size: larger;
+    font-weight: 800;
 }
 
 #Projects > h2 {
@@ -391,8 +448,8 @@ article > div {
 /* ////////////////////////////////// Footer //////////////////////////////////////// */
 
 footer{
+    background: rgb(87 96 109 / 30%);
     background: rgb(238 235 224 / 30%);
-    /* background: rgb(0,0,0, 0.7); */
     display: flex;
     align-items: center;
     justify-content: center;
