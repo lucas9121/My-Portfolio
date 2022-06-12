@@ -1,6 +1,6 @@
 html{
-    background-color: #080808;
     background: rgb(255 152 0 / 57%);
+    transition: 2s;
 }
 
 body{
@@ -9,12 +9,9 @@ body{
    flex-direction: column;
    justify-content: space-between;
    margin: 0 auto;
-   /* color: purple; */
-   color: rgb(255 255 255 / 78%);
    color: rgb(0 0 0 / 78%);
-   background: linear-gradient(45deg, black, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6), rgb(0, 48, 100, .7), rgb(0, 62, 129, .9));
-   background: linear-gradient(60deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 80%), rgb(1 18 42 / 70%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 70%), rgb(0 62 129));
    background: linear-gradient(60deg, rgb(255 250 240 / 60%), rgb(255 250 240 / 80%), rgb(223 203 157 / 70%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 70%), rgb(234 178 39));
+   transition: 2s;
 }
 
 /* /// Every Ul element //// */
@@ -32,14 +29,13 @@ ul{
 
 /* ////////////////////////////////// Navigation //////////////////////////////////////// */
 header{
-    background: rgb(0 62 129 / 70%);
     background: rgb(236 197 108 / 80%);
-    /* background: rgb(0,0,0, 0.7); */
     padding: .2% 1.2%;
     height: 5%;
     height: 70px;
     border-radius: 0 0 5px 5px;
     display: flex;
+    transition: 2s;
 }
 
 nav{
@@ -255,6 +251,7 @@ article{
     background: url(../images/A881DD38-7689-4ECB-9DA3-D26DFEB03838_1_105_c.jpeg);
     height: 47vh;
     width: 30vw;
+    max-width: 570px;
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -332,6 +329,7 @@ article > div {
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    transition: 2s;
 }
 
 .game-description::-webkit-scrollbar {
@@ -347,7 +345,7 @@ article > div {
 .game-description > p{
     font-size: 1.5rem;
     margin-bottom: 0;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 0 1%;
     text-indent: 2%;
     line-height: 1.2em;
@@ -400,15 +398,15 @@ article > div {
 
 /* /// Tech icons //// */
 .html{
-    color: lightskyblue;
+    color: crimson;
 }
 
 .css3{
-    color: goldenrod;
+    color: cornflowerblue;
 }
 
 .js-sq{
-    color: crimson;    
+    color: goldenrod;    
 }
 
 .mdb{
@@ -457,6 +455,7 @@ footer{
     height: 32px;
     border-radius: 5px 5px 0 0;
     gap: 25px;
+    transition: 2s !important;
 }
 
 footer > p {
@@ -479,4 +478,23 @@ footer > p {
 
 #twiter:hover{
     color: cadetblue;
+}
+
+.darkmode-links{
+    color: white;
+}
+.darkmode-links:hover{
+    color: black;
+}
+
+.darkmode-icons{
+    color: white;
+}
+
+.darkmode-icons:hover{
+    color: rgb(188, 187, 187);
+}
+
+.transition-effect{
+    transition: 2s;
 }
