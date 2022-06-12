@@ -272,7 +272,7 @@ article{
 #skills {
     height: fit-content;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-start;
 }
 
 #skills > li {
