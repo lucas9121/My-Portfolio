@@ -23,7 +23,7 @@ input.addEventListener('click', () => {
         for(let i = 0; i < icons.length; i++){
             icons[i].classList.add('darkmode-icons')
             if(i <= links.length - 1) links[i].classList.add('darkmode-links')
-            if(i <= projects.length - 1) projects[i].style.background = 'rgb(0, 0, 0, 0.7)'
+            // if(i <= projects.length - 1) projects[i].style.background = 'rgb(0, 0, 0, 0.7)'
             footer.style.background = 'rgb(87 96 109 / 30%)'
         }
     } else {
