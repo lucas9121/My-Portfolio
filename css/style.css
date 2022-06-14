@@ -5,6 +5,7 @@
 
 html{
     background: rgb(255 152 0 / 57%);
+    background: black;
 }
 
 body{
@@ -14,7 +15,7 @@ body{
    justify-content: space-between;
    margin: 0 auto;
    color: rgb(0 0 0 / 78%);
-   background: linear-gradient(60deg, rgb(255 250 240 / 60%), rgb(255 250 240 / 80%), rgb(223 203 157 / 70%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 70%), rgb(234 178 39));
+   background: linear-gradient(60deg, rgba(240, 254, 255, 0.6), rgba(240, 254, 255, 0.8), rgb(240 254 255 / 70%), rgb(240 254 255 / 60%), rgb(240 254 255 / 60%), rgb(240 254 255 / 60%), rgb(240 254 255 / 60%), rgb(223 203 157 / 70%), rgb(234 178 39));
 }
 
 /* /// Every Ul element //// */
@@ -38,6 +39,7 @@ header{
     height: 70px;
     border-radius: 0 0 5px 5px;
     display: flex;
+    background: dimgray;
 }
 
 nav{
@@ -50,18 +52,18 @@ nav{
 
 #logo{
     background: url(../images/Logo/logo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: round;
     height: 100%;
     width: 13%;
+    max-width: 255px;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
-#logo > p > a {
-    color: white;
-    scroll-behavior: smooth;
-    text-decoration: none;
+#logo > a {
+    height: 100%;   
+    width: 100%;
 }
 
 nav > h1 {
@@ -290,7 +292,6 @@ article{
 
 #WV-picture{
     background: url(../images/WOV/WOV1.png);
-    background-size: contain;
     background-repeat: round;
 }
 
@@ -312,14 +313,14 @@ article > div {
     background: rgb(255 255 255 / 70%);
     overflow: auto;
     padding: 0 15px;
-    /* -ms-overflow-style: none;
-    scrollbar-width: none; */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.game-description::-webkit-scrollbar {
+/* .game-description::-webkit-scrollbar {
     display: none;
     color: red;
-}
+} */
 
 .game-description > h1 {
     font-size: 2rem;
@@ -481,30 +482,4 @@ footer > p {
 
 .transition-effect{
     transition: 1s;
-}
-
-@keyframes night {
-    0% {background: linear-gradient(60deg, rgb(255 250 240 / 60%), rgb(255 250 240 / 80%), rgb(223 203 157 / 70%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 70%), rgb(234 178 39)); opacity: 100;}
-    49% {background: linear-gradient(60deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 80%), rgb(1 18 42 / 70%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 70%), rgb(0 62 129)); opacity: 5;}
-    50% {background: linear-gradient(60deg, rgb(255 250 240 / 60%), rgb(255 250 240 / 80%), rgb(223 203 157 / 70%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 70%), rgb(234 178 39)); opacity: 0;}
-    100% {background: linear-gradient(60deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 80%), rgb(1 18 42 / 70%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 70%), rgb(0 62 129)); opacity: 100;}
-}
-
-.night-animation{
-    animation: night;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes day {
-    0% {background: linear-gradient(60deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 80%), rgb(1 18 42 / 70%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 70%), rgb(0 62 129)); opacity: 100;}
-    49% {background: linear-gradient(60deg, rgb(255 250 240 / 60%), rgb(255 250 240 / 80%), rgb(223 203 157 / 70%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 70%), rgb(234 178 39)); opacity: 5;}
-    50% {background: linear-gradient(60deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 80%), rgb(1 18 42 / 70%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 60%), rgb(1 18 42 / 70%), rgb(0 62 129)); opacity: 0;}
-    0% {background: linear-gradient(60deg, rgb(255 250 240 / 60%), rgb(255 250 240 / 80%), rgb(223 203 157 / 70%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 60%), rgb(223 203 157 / 70%), rgb(234 178 39)); opacity: 100;}
-}
-
-.day-animation{
-    animation: day;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in-out;
 }
