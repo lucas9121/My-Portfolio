@@ -181,6 +181,7 @@ main::-webkit-scrollbar {
 
 #main-div{
     width: 80vw;
+    height: 100%;
     max-width: 1630px;
     margin: 0 auto;
     overflow: auto;
@@ -229,7 +230,7 @@ article{
 }
 
 #About{
-    height: 100vh;
+    height: 100%;
     align-items: center;
     padding: 0;
     gap: 10%;
@@ -521,7 +522,8 @@ footer > p {
         width: 90vw;
     }
     #About-img {
-        height: 27vh;
+        height: 22vh;
+        max-width: 150px;
     }
     #About > div > h1 {
         font-size: 1.5em;
@@ -574,15 +576,27 @@ footer > p {
     }
 }
 
+@media (min-width: 500px){
+    header{
+        height: 65px;
+    }
+    #Hero > h1{
+        margin-bottom: 0;
+    }
+    #About-img {
+        height: 60vh;
+        max-width: 225px;
+    }
+}
+
+@media (min-width: 600px){
+    #About-img {
+        height: 60vh;
+        max-width: 225px;
+    }
+}
+
 @media (min-width: 768px){
-
-}
-
-@media (min-width: 992px){
-
-}
-
-@media(min-width: 1200px){
     header{
         height: 70px;
     }
@@ -592,6 +606,102 @@ footer > p {
     .nav-footer-ul{
         font-size: 1em;
     }
+    #Hero > h3{
+        font-size: 1.5em;
+        margin-top: .8em;
+        margin-bottom: 0;
+    }
+    #main-div{
+        width: 90vw;
+    }
+    #About-img {
+        height: 30vh;
+        max-width: 500px;
+    }
+    #About > div > h1 {
+        font-size: 2em;
+    }
+    #About-description > p {
+        font-size: 1.2em;
+    }
+    #skills > li {
+        font-size: larger;
+    }
+    #Projects > h2 {
+        font-size: 2em;
+        padding: 0;
+    }
+    /* .my-projects {
+        width: 90%;
+    } */
+    .my-projects > div:nth-of-type(1){
+        height: 324px;
+    }
+    .my-projects > .game-description {
+        height: 320px;
+        flex: 2;
+    }
+    .game-description > h1 {
+        font-size: 2em;
+    }
+    .game-description > p {
+        font-size: 1em;
+    }
+    #GH{
+        font-size: 1.7em;
+    }
+    #RFT{
+        font-size: 1.7em;
+    }
+    #WOV{
+        font-size: 1.7em;
+    }
+    .tech {
+        padding: 20px 0 5px 0;
+    }
+
+}
+
+@media (min-width: 825px) {
+    #About-img {
+        height: 50vh;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 992px){
+    #Hero > h1{
+        font-size: 3em;
+        margin: 0.67em 0;
+    }
+    #Hero > h3{
+        font-size: 1.8em;
+        margin: 0.67em 0;
+    }
+    #About-img {
+        height: 65vh;
+        max-width: 390px;
+    }
+    .my-projects {
+        flex-direction: row;
+        width: 90%;
+    }
+    .my-projects > div {
+        flex: 1;
+    }
+    .my-projects > div:nth-of-type(1){
+        border-radius: 10px 0 0 10px;
+    }
+    .my-projects > .game-description {
+        border-radius: 0 10px 10px 0;
+        flex: 2;
+    }
+    .game-description > p {
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width: 1200px){
     #Hero > h1{
         font-size: 5em;
     }
@@ -602,7 +712,8 @@ footer > p {
         width: 80vw;
     }
     #About-img {
-        height: 47vh;
+        height: 55vh;
+        max-width: 440px;
     }
     #About > div > h1 {
         font-size: 3em;
@@ -610,47 +721,27 @@ footer > p {
     #About-description > p {
         font-size: 2em;
     }
-    #skills > li {
-        font-size: larger;
-    }
     #Projects > h2 {
         font-size: 3em;
+        padding-left: 5%;
     }
     .my-projects {
-        flex-direction: row;
         width: 90%;
-    }
-    .my-projects > div {
-        flex: 1;
-    }
-    .my-projects > div:nth-of-type(1){
-        height: 324px;
-        border-radius: 10px 0 0 10px;
-    }
-    .my-projects > .game-description {
-        height: 320px;
-        border-radius: 0 10px 10px 0;
-        flex: 2;
-    }
-    .game-description > h1 {
-        font-size: 2em;
-        margin-top: 10px;
-    }
-    .game-description > p {
-        font-size: 1.5em;
     }
     #GH{
         font-size: 3rem;
     }
-    
     #RFT{
         font-size: 3rem;
     }
-    
     #WOV{
         font-size: 3rem;
     }
-    .tech {
-        padding: 20px 0 5px 0;
+}
+
+@media (min-width: 1400px){
+    #About-img {
+        height: 47vh;
+        max-width: 570px;
     }
 }
