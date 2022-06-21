@@ -4,8 +4,9 @@
 }
 
 html{
-    background: rgb(255 152 0 / 57%);
-    background: black;
+    /* background: rgb(255 152 0 / 57%); */
+    /* background: black; */
+    background: linear-gradient(357deg, #00000091, #1c586ad4);;
 }
 
 body{
@@ -184,14 +185,6 @@ main::-webkit-scrollbar {
     height: 100%;
     max-width: 1630px;
     margin: 0 auto;
-    overflow: auto;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-#main-div::-webkit-scrollbar {
-    display: none;
 }
 
 #Hero{
@@ -270,7 +263,7 @@ article{
 #About-description > p {
     font-size: 2rem;
     margin: 0;
-    text-indent: 10px;
+    text-indent: 2%;
 }
 
 #skills {
@@ -631,9 +624,6 @@ footer > p {
         font-size: 2em;
         padding: 0;
     }
-    /* .my-projects {
-        width: 90%;
-    } */
     .my-projects > div:nth-of-type(1){
         height: 324px;
     }
