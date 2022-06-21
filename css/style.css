@@ -35,8 +35,8 @@ ul{
 header{
     background: rgb(236 197 108 / 80%);
     padding: .2% 1.2%;
-    height: 5%;
-    height: 70px;
+    height: 8%;
+    /* height: 70px; */
     border-radius: 0 0 5px 5px;
     display: flex;
     background: dimgray;
@@ -56,9 +56,11 @@ nav{
     height: 100%;
     width: 13%;
     max-width: 255px;
+    min-width: 140px;
     padding: 0;
     margin: 0;
     display: flex;
+    flex: 1;
 }
 
 #logo > a {
@@ -179,6 +181,7 @@ main::-webkit-scrollbar {
 
 #main-div{
     width: 80vw;
+    max-width: 1630px;
     margin: 0 auto;
     overflow: auto;
     scroll-behavior: smooth;
@@ -232,7 +235,7 @@ article{
     gap: 10%;
 }
 
-.img {
+#About-img {
     background: url(../images/A881DD38-7689-4ECB-9DA3-D26DFEB03838_1_105_c.jpeg);
     height: 47vh;
     width: 30vw;
@@ -247,20 +250,33 @@ article{
     height: 47vh;
 }
 
+#About-description {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#About-description::-webkit-scrollbar {
+    display: none;
+}
+
 #About > div > h1 {
     font-size: 3rem;
     /* font-family: sans-serif; */
     margin-top: 0;
 }
 
-#About > div > p {
+#About-description > p {
     font-size: 2rem;
+    margin: 0;
+    text-indent: 10px;
 }
 
 #skills {
     height: fit-content;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 15px 0;
 }
 
 #skills > li {
@@ -309,18 +325,17 @@ article > div {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 300px;
+    height: 320px;
     background: rgb(255 255 255 / 70%);
     overflow: auto;
-    padding: 0 15px;
+    padding: 2px 15px;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-/* .game-description::-webkit-scrollbar {
+.game-description::-webkit-scrollbar {
     display: none;
-    color: red;
-} */
+}
 
 .game-description > h1 {
     font-size: 2rem;
@@ -331,7 +346,7 @@ article > div {
 .game-description > p{
     font-size: 1.5rem;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 0 1%;
     text-indent: 2%;
     line-height: 1.2em;
@@ -356,6 +371,7 @@ article > div {
 .tech{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 20px 0 5px 0;
 }
@@ -482,4 +498,159 @@ footer > p {
 
 .transition-effect{
     transition: 1s;
+}
+
+
+@media (min-width: 360px){
+    header{
+        height: 8%;
+    }
+    #logo{
+        height: 80%;
+    }
+    .nav-footer-ul{
+        font-size: 0.7em;
+    }
+    #Hero > h1{
+        font-size: 2em;
+    }
+    #Hero > h3{
+        font-size: 1.17em;
+    }
+    #main-div{
+        width: 90vw;
+    }
+    #About-img {
+        height: 27vh;
+    }
+    #About > div > h1 {
+        font-size: 1.5em;
+    }
+    #About-description {
+        height: 100%;
+    }
+    #About-description > p {
+        font-size: 1em;
+    }
+    #skills > li {
+        font-size: 1em;
+    }
+    #Projects > h2 {
+        font-size: 2em;
+    }
+    .my-projects {
+        flex-direction: column;
+        width: 100%;
+    }
+    .my-projects > div {
+        flex: none;
+    }
+    .my-projects > div:nth-of-type(1){
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+    .game-description {
+        height: 300px;
+        border-radius: 0 0 10px 10px;
+    }
+    .game-description > h1 {
+        font-size: 1.5em;
+        margin-top: 5px;
+    }
+    .game-description > p {
+        font-size: 1em;
+    }
+    #GH{
+        font-size: 1.5em;
+    }
+    #RFT{
+        font-size: 1.5em;
+    }
+    #WOV{
+        font-size: 1.5em;
+    }
+    .tech {
+        padding: 10px 0 5px 0;
+    }
+}
+
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media(min-width: 1200px){
+    header{
+        height: 70px;
+    }
+    #logo{
+        height: 100%;
+    }
+    .nav-footer-ul{
+        font-size: 1em;
+    }
+    #Hero > h1{
+        font-size: 5em;
+    }
+    #Hero > h3{
+        font-size: 2em;
+    }
+    #main-div{
+        width: 80vw;
+    }
+    #About-img {
+        height: 47vh;
+    }
+    #About > div > h1 {
+        font-size: 3em;
+    }
+    #About-description > p {
+        font-size: 2em;
+    }
+    #skills > li {
+        font-size: larger;
+    }
+    #Projects > h2 {
+        font-size: 3em;
+    }
+    .my-projects {
+        flex-direction: row;
+        width: 90%;
+    }
+    .my-projects > div {
+        flex: 1;
+    }
+    .my-projects > div:nth-of-type(1){
+        height: 324px;
+        border-radius: 10px 0 0 10px;
+    }
+    .my-projects > .game-description {
+        height: 320px;
+        border-radius: 0 10px 10px 0;
+        flex: 2;
+    }
+    .game-description > h1 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+    .game-description > p {
+        font-size: 1.5em;
+    }
+    #GH{
+        font-size: 3rem;
+    }
+    
+    #RFT{
+        font-size: 3rem;
+    }
+    
+    #WOV{
+        font-size: 3rem;
+    }
+    .tech {
+        padding: 20px 0 5px 0;
+    }
 }
